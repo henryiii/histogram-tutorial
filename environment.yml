@@ -1,0 +1,13 @@
+name: histogram-tutorial
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.6
+  - jupyterlab
+  - matplotlib
+  - nb_conda_kernels
+  - numba
+  - numpy
+  - pandas
+  - boost-histogram==0.6.2
