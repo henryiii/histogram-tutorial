@@ -1,13 +1,13 @@
 name: histogram-tutorial
 channels:
   - conda-forge
-  - defaults
 dependencies:
-  - python>=3.6
+  - python>=3.8
   - jupyterlab
   - matplotlib
   - nb_conda_kernels
   - numba
   - numpy
   - pandas
-  - boost-histogram==0.6.2
+  - hist >=2.0
+  - mypy>=0.800

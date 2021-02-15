@@ -1,19 +1,22 @@
-# 
+# Histogram tutorial
 PRE-Alpha stage
 
 Click here to try in Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/henryiii/histogram-tutorial/master?urlpath=lab/tree/1_1D_histograms.ipynb)
 
 ## Short description
 
-This tutorial is an introduction to boost-histogram, a library providing a
-powerful histogram-as-an-object concept. It is aimed at scientists and data
-analyst who use histograms in their analysis. Some familiarity with numpy and
-at least passing knowledge of numpy's histogram functions is expected. Some
-familiarity with matplotlib is also useful, but not required.
+This tutorial is an introduction to histogramming using the Scikit-HEP family
+of histogram tools, built on the a powerful histogram-as-an-object concept. It
+is designed to replace a tedious manual histogram workflow, as well as show new
+places that histograms can be used that might not have been expected. Some
+familiarity with NumPy and at least passing knowledge of NumPy's histogram
+functions is expected. Some familiarity with Matplotlib is also useful, but not
+required.
 
-We will work though a series of notebooks and will build up the idea of a
-histogram as an object instead of a collection of arrays. We will then solve
-several realistic problems.
+We will start each hour with a notebook lecture, and then we will then solve an
+interesting problem in small groups. For the final problem, we will look at
+implementing a plotting function consuming a PlottableProtocol using MyPy, so
+that you can build your own compatible and plotting functions.
 
 ---
 
@@ -21,44 +24,46 @@ several realistic problems.
 
 Before starting, a link to a GitHub repository will be provided, containing at
 least an `environment.yaml` file that can be used to quickly set up a
-reproducible environment using conda.
+reproducible environment using Conda.
 
-### 1. 1D histograms (50 minutes)
+### 1. 1D histograms (30 minute lecture, 20 minute exercise)
 
 This will introduce the concept of a histogram. It will start by computing a
-standard histogram with Numpy, then move to the drop-in replacement in
-boost-histogram, noting the speed difference. Then, we will move to returning
-an object, but then converting it to a Numpy style output, and will slowly
-iterate until we arrive at the full histogram object start to finish. The
-lesson will fill in the basic concepts of a histogram, such as axis properties
-and slicing, and then participants will get to try converting a piece of code
-from Numpy to histogram objects.
+standard histogram with NumPy, then move to the drop-in replacement using Hist,
+a library backed by the powerful boost-histogram, noting the speed difference.
+Then, we will move to returning an object, but then converting it to a NumPy
+style output, and will eventually arrive at the full histogram
+object start to finish. The lesson will fill in the basic concepts of a
+histogram, such as axis properties and slicing, and then participants will get
+to try converting a piece of code from NumPy to histogram objects.
 
-### 2. ND histograms (40 minutes)
+#### 1.a Exercise: data investigation
+
+### 2. ND histograms (20 minute lecture, 20 + 20 minute exercises)
 
 This will cover multidimensional histograms. While they have the same API,
 there several new concepts for attendees to learn, such as plotting in 2D,
-projection and categorical selection (used in lesson 5), and dictionary
-indexing.
+projection and categorical selection, and dictionary indexing. A few of the special axes 
 
-### 3. Special histogram storages (30 minutes)
+#### 2.a Exercise: Images as histograms
 
-This will cover the non-default storages. After a quick mention of selecting
-other simple storages (double, int, atomic int, unlimited), we will focus on
-the four accumulator based storages (weighted, weighted sum, mean, weighted
+#### 2.b Exercise: Computing repository interactions via histograms
+
+### 3. Special histogram storages and axes (30 minute lecture, 30 minute exercise)
+
+This will cover the non-default storages. We will focus on
+the accumulator based storages (weighted, mean, weighted
 mean) and how to manipulate the Numpy record views returned from these storages
 efficiently. This will use accumulators directly as well, to illustrate how
 they work without the extra complications of manipulating views.
 
-### 4. Special histogram axes (30 minutes)
-
-This will delve into the axis options (under/overflow, growth, circular)
-as well as look at the four main categories of axes. Custom transform creation
+This will delve into the different axis options (under/overflow, growth, circular)
+and the four main categories of axes. Custom transform creation
 will be explored, using Numba to produce a c callback with `@cfunc` that can be
 used to provide regular spaced binning transforms with virtually no performance
-loss over purely compiled code.
+loss over purely compiled code. String based categorical axes will get extra detail.
 
-### 5. Analysis example: selections as categories (25 minutes)
+#### 3.a Exercise: selections as categories
 
 This will cover a realistic example of an analysis, where a collection of
 different selections are required. Selections (such as data quality criteria)
@@ -68,9 +73,14 @@ be combined into a single object, and also makes it easier to add new control
 checks, so that selections can be made when histogramming that can later be
 removed.
 
-### 6. Analysis example: TBD (25 minutes)
+### 4 Building a PlottableProtocol function with MyPy (40 mins lecture, 20 mins exercise)
 
-### 7. Advanced: xarray histograms (30 minutes)
+This will look into implementing a PlottableProtocol function that accepts any
+histogram object that conforms to the PlottableProtocol specification from UHI.
+
+
+
+#### Removed/optional example: xarray histograms
 
 Boost-histogram is meant to be a core library that the other 1-2 dozen
 histogramming libraries currently available can use as a backend to simplify
