@@ -9,5 +9,5 @@ dependencies:
   - numba
   - numpy
   - pandas
-  - hist >=2.0
-  - mypy>=0.800
+  - hist >=2.2
+  - mypy>=0.812
