@@ -1,5 +1,5 @@
 # Histograms as Objects
-PRE-Alpha stage
+PRE-Alpha stage. Due to the birth of my Daughter, this was delayed. Boost-histogram 1.0 and Hist 2.2 have been released, so this will be updated in the near future.
 
 Click here to try in Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/henryiii/histogram-tutorial/master?urlpath=lab/tree/1_1D_histograms.ipynb)
 
