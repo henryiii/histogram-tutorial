@@ -10,4 +10,7 @@ dependencies:
   - numpy
   - pandas
   - hist >=2.2
-  - mypy>=0.812
+  - mypy>=0.900
+  - histoprint
+  - uhi
+  - mplhep
