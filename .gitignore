@@ -204,3 +204,4 @@ TSWLatexianTemp*
 /auto/*
 
 .ipynb_checkpoints/
+tmp_*
