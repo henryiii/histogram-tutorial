@@ -16,6 +16,16 @@ You can run these notebooks and follow the tutorial in this public cloud service
 
 ## Abstract
 
+
+
+Recent developments in Scikit-HEP libraries have enabled fast, efﬁcient histogramming powered by boost-histogram. Hist provides useful shortcuts for plotting and proﬁles based on boost-histogram. This talk aims to discuss these histogramming packages built on the histogram-as-an-object concept.
+
+The attendees would learn how to use these tools to easily make histograms, perform various operations on them, and make their analysis more efficient and easy. The talk would also discuss some examples and use cases, recent developments and future plans for these packages.
+
+
+<!--
+## Abstract
+
 This is an introduction to histogramming using the Scikit-HEP family of histogram tools, built on the powerful histogram-as-an-object concept. Attendees will learn how to replace a tedious manual histogram workflow with a simple, elegant one based on the histogram object. For example, allowing a histogram to be filled multiple times removes the need to manually combine NumPy arrays, and opens up new workflows where the fills happen in the most natural place in a data ingestion pipeline. Supporting easy rebinning  allows filling to happen at a higher resolution than the final histogram, allowing multiple resolutions to be tested with a single fill. Projections allow the final histogram to be made from one with more dimensions; combined with numerical, categorical, and boolean axes, this allows large numbers of histograms to be combined into one histogram, with one fill, and then projected out to from there to the final result. These are generalized histograms, as well, so you can track means as well, not just sums.
 
 We will cover some places that (generalized) histograms are the most natural solution to problems, such as imaging and data aggregation. An example of this is with GitHub repository interactions; where users will query stats on GitHub, and will build a histogram that uses string categorical axes. Then they will plot interactions based on cross-terms in the histogram axes. Another example will show manipulating image data with the slicing syntax with natural data coordinates. Applying reductions to a selected subset will make it easy to compute statistics over a visible portion of an image. We'll also look at a more general analysis example, extracting information from multiple axes instead of using if statements in code.
@@ -73,8 +83,6 @@ This will look into implementing a PlottableProtocol function that accepts any h
 #### Removed/optional example: xarray histograms
 
 Boost-histogram is meant to be a core library that the other 1-2 dozen histogramming libraries currently available can use as a backend to simplify their code and increase their performance.  One example of this will be attempted with `xhistogram`, a package that combines histograms and `xarray` objects. Using boost-histogram's powerful axis metadata and other features, we will replicate a significant portion of xhistogram with just a few lines of code.
-
-
 # Setup instructions
 
 
@@ -128,6 +136,7 @@ jupyter lab
 * MyPy (for final exercise; will be covered in material)
 
 ---
+-->
 
 ## About the author
 
