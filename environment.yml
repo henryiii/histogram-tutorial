@@ -9,7 +9,7 @@ dependencies:
   - numba
   - numpy
   - pandas
-  - hist >=2.2
+  - hist >=2.4
   - mypy>=0.900
   - histoprint
   - uhi
