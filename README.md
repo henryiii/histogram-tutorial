@@ -1,10 +1,20 @@
-# Histograms as Objects
-PRE-Alpha stage. Due to the birth of my Daughter, this was delayed. Boost-histogram 1.0 and Hist 2.2 have been released, so this will be updated in the near future.
+# High-Performance Histogramming for HEP Analysis
 
-Click here to try in Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/henryiii/histogram-tutorial/master?urlpath=lab/tree/1_1D_histograms.ipynb)
+_work in progress_
+
+This is the repository for the tutorial **[High-Performance Histogramming for HEP Analysis](https://indico.cern.ch/event/1019958/contributions/4430375/)** presented at PyHEP 2021 on July 7th, 2021.
+
+<!-- /* PRE-Alpha stage. Due to the birth of my Daughter, this was delayed. Boost-histogram 1.0 and Hist 2.2 have been released, so this will be updated in the near future. -->
+
+You can run these notebooks and follow the tutorial in this public cloud service called Binder: 
+
+<p align="center">
+<a href="https://mybinder.org/v2/gh/henryiii/histogram-tutorial/master?urlpath=lab/tree/1_1D_histograms.ipynb">
+    <img src="https://mybinder.org/badge_logo.svg" alt="Launch Binder" height="27">
+</a>
+</p>
 
 ## Abstract
-
 
 This is an introduction to histogramming using the Scikit-HEP family of histogram tools, built on the powerful histogram-as-an-object concept. Attendees will learn how to replace a tedious manual histogram workflow with a simple, elegant one based on the histogram object. For example, allowing a histogram to be filled multiple times removes the need to manually combine NumPy arrays, and opens up new workflows where the fills happen in the most natural place in a data ingestion pipeline. Supporting easy rebinning  allows filling to happen at a higher resolution than the final histogram, allowing multiple resolutions to be tested with a single fill. Projections allow the final histogram to be made from one with more dimensions; combined with numerical, categorical, and boolean axes, this allows large numbers of histograms to be combined into one histogram, with one fill, and then projected out to from there to the final result. These are generalized histograms, as well, so you can track means as well, not just sums.
 
