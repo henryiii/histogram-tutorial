@@ -1,7 +1,5 @@
 # High-Performance Histogramming for HEP Analysis
 
-_work in progress_
-
 This is the repository for the tutorial **[High-Performance Histogramming for HEP Analysis](https://indico.cern.ch/event/1019958/contributions/4430375/)** presented at PyHEP 2021 on July 7th, 2021.
 
 <!-- /* PRE-Alpha stage. Due to the birth of my Daughter, this was delayed. Boost-histogram 1.0 and Hist 2.2 have been released, so this will be updated in the near future. -->
