@@ -12,4 +12,4 @@ jobs:
     - uses: peaceiris/actions-gh-pages@v3
       with:
         publish_dir: _output
-        force_orphan: true
+        github_token: ${{ secrets.GITHUB_TOKEN }}
