@@ -2,7 +2,7 @@ name: histogram-tutorial
 channels:
   - conda-forge
 dependencies:
-  - python>=3.9
+  - python >=3.9
   - jupyterlab
   - matplotlib
   - nb_conda_kernels
@@ -10,7 +10,8 @@ dependencies:
   - numpy
   - pandas
   - hist >=2.4
-  - mypy>=0.900
+  - mypy >=0.900
   - histoprint
   - uhi
   - mplhep
+  - uproot-browser >=0.2.0
