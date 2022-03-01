@@ -14,4 +14,6 @@ dependencies:
   - histoprint
   - uhi
   - mplhep
-  - uproot-browser >=0.2.0
+  - pip >=18
+  - pip:
+    - uproot-browser >=0.2.0
