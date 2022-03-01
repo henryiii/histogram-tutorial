@@ -1,0 +1,3 @@
+[submodule "scikit-hep-testdata"]
+	path = scikit-hep-testdata
+	url = https://github.com/scikit-hep/scikit-hep-testdata.git
