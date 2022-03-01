@@ -5,7 +5,7 @@ This is the repository for the tutorial **[boost-histogram / Hist](https://indic
 You can run these notebooks and follow the tutorial in this public cloud service called Binder:
 
 <p align="center">
-<a href="https://mybinder.org/v2/gh/henryiii/histogram-tutorial/master?urlpath=lab/tree/1_1D_histograms.ipynb">
+<a href="https://mybinder.org/v2/gh/henryiii/histogram-tutorial/master?urlpath=lab/tree/1-PyHEP-topical.ipynb">
     <img src="https://mybinder.org/badge_logo.svg" alt="Launch Binder" height="27">
 </a>
 </p>

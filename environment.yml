@@ -1,0 +1,16 @@
+name: histogram-tutorial
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.9
+  - jupyterlab
+  - matplotlib
+  - nb_conda_kernels
+  - numba
+  - numpy
+  - pandas
+  - hist >=2.4
+  - mypy>=0.900
+  - histoprint
+  - uhi
+  - mplhep
