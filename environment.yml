@@ -15,5 +15,6 @@ dependencies:
   - uhi
   - mplhep
   - pip >=18
+  - uncertainties
   - pip:
     - uproot-browser >=0.2.0
