@@ -13,3 +13,4 @@ jobs:
       with:
         publish_dir: _output
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        force_orphan: true
