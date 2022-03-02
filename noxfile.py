@@ -11,10 +11,17 @@ def pyodide(session: nox.Session) -> None:
     session.run("jupyter", "lite", "init")
     output = DIR / "_output"
     build = output / "build"
-    paths = [output/"jupyterlite.schema.v0.json", *build.glob("*.js"), *build.glob("*.js.map")]
+    paths = [
+        output / "jupyterlite.schema.v0.json",
+        *build.glob("*.js"),
+        *build.glob("*.js.map"),
+    ]
     for path in paths:
         txt = path.read_text()
-        txt = txt.replace("https://cdn.jsdelivr.net/pyodide/v0.19.0", "https://cdn.jsdelivr.net/pyodide/dev")
+        txt = txt.replace(
+            "https://cdn.jsdelivr.net/pyodide/v0.19.0",
+            "https://cdn.jsdelivr.net/pyodide/dev",
+        )
         path.write_text(txt)
 
     session.run("jupyter", "lite", "build")
@@ -22,5 +29,3 @@ def pyodide(session: nox.Session) -> None:
     if "--serve" in session.posargs:
         session.install("jupyterlite[serve]")
         session.run("jupyter", "lite", "serve")
-
-

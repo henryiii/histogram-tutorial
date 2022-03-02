@@ -4,7 +4,7 @@ This is the repository for the tutorial **[High-Performance Histogramming for HE
 
 <!-- /* PRE-Alpha stage. Due to the birth of my Daughter, this was delayed. Boost-histogram 1.0 and Hist 2.2 have been released, so this will be updated in the near future. -->
 
-You can run these notebooks and follow the tutorial in this public cloud service called Binder: 
+You can run these notebooks and follow the tutorial in this public cloud service called Binder:
 
 <p align="center">
 <a href="https://mybinder.org/v2/gh/henryiii/histogram-tutorial/master?urlpath=lab/tree/1_1D_histograms.ipynb">
@@ -56,7 +56,7 @@ This will introduce the concept of a histogram. It will start by computing a sta
 
 ### 2. ND histograms (20 minute lecture, 20 + 20 minute exercises)
 
-This will cover multidimensional histograms. While they have the same API, there several new concepts for attendees to learn, such as plotting in 2D, projection and categorical selection, and dictionary indexing. A few of the special axes 
+This will cover multidimensional histograms. While they have the same API, there several new concepts for attendees to learn, such as plotting in 2D, projection and categorical selection, and dictionary indexing. A few of the special axes
 
 #### 2.a Exercise: Images as histograms
 
@@ -144,4 +144,3 @@ Henry Schreiner is a Research Software Engineer and Computational Physicist in H
 * About the author: https://iscinumpy.gitlab.io/page/about/
 * Past presentations: http://iscinumpy.gitlab.io/page/presentations/ (most presentations this last year have been minicourses, see main blog page for links)
 * Most recent mini-course: Level Up Your Python, https://henryiii.github.io/level-up-your-python
-
