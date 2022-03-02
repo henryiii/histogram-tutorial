@@ -17,6 +17,8 @@ def pyodide(session: nox.Session) -> None:
         txt = txt.replace("https://cdn.jsdelivr.net/pyodide/v0.19.0", "https://cdn.jsdelivr.net/pyodide/dev")
         path.write_text(txt)
 
+    session.run("jupyter", "lite", "build")
+
     if "--serve" in session.posargs:
         session.install("jupyterlite[serve]")
         session.run("jupyter", "lite", "serve")
